@@ -1,0 +1,62 @@
+{
+  {
+    "ReRoutes": [
+      {
+        "DownstreamPathTemplate": "/api/{everything}",
+        "UpstreamPathTemplate": "/{everything}",
+        "UpstreamHttpMethod": [ "Get" ],
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "service-prise-de-rendezvous",
+            "Port": 5001
+          }
+        ],
+        "AuthenticationOptions": {
+          "AuthenticationProviderKey": "Bearer", // Indique l'utilisation de JWT
+          "JwksOptions": {
+            "Authority": "https://mon-serveur-d-authentification.com", // Remplacez par l'URL de votre serveur d'identité, fait
+            "RequireHttps": true
+          },
+          "RouteName": "ServicePriseDeRendezVous" // Remplacez par un nom approprié", fait
+        }
+      }
+        ],
+    "AuthenticationOptions": {
+      "AuthenticationProviderKey": "Bearer",
+      "JwksOptions": {
+        "Authority": "https://mon-serveur-d-authentification.com",
+        "RequireHttps": true
+      },
+      "RouteName": "ServiceAgendaPraticiens"
+    }
+  },
+  {
+    "DownstreamPathTemplate": "/api/practitioner-agenda/{practitionerId}",
+    "UpstreamPathTemplate": "/practitioner-agenda/{practitionerId}",
+    "UpstreamHttpMethod": [ "Get" ],
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "service-agenda-praticiens",
+        "Port": 5002
+      }
+    ],
+    
+    "AuthenticationOptions": {
+      "AuthenticationProviderKey": "Bearer",
+      "JwksOptions": {
+        "Authority": "https://your-identity-server",
+        "RequireHttps": true
+      },
+      "RouteName": "your-route-name"
+    }
+  }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5000"
+    }
+  }
+
+
+}

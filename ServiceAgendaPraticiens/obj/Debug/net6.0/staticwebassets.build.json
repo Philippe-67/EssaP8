@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mlU05GyU+cJxr5BvjUN7psaAlohxB8h0xwUgq0EJU3I=",
+  "Source": "ServiceAgendaPraticiens",
+  "BasePath": "_content/ServiceAgendaPraticiens",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
