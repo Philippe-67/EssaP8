@@ -2,8 +2,8 @@
 {
     public class Appointement
     {
-        public int AppointmentId { get; set; }
-        public DateTime AppointmentDate { get; set; }
+        public int AppointementId { get; set; }
+        public DateTime AppointementDate { get; set; }
         public string PatientId { get; set; }
         public string PatientName { get; set;}
         public string TypeRDV { get; set;}

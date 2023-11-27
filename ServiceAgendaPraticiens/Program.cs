@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using ServiceAgendaPraticiens.Repositories;
 
 internal class Program
 {
@@ -20,7 +21,8 @@ internal class Program
                 options.RequireHttpsMetadata = true;
                 options.Audience = "https://ServicePriseDeRendezVous-Microservice.com"; // Remplacez par l'audience appropriée
             });
-
+        builder.Services.AddScoped<IRepositoryPraticien, RepositoryPraticien>();
+        builder.Services.AddScoped<IRepositoryAgendaPraticien, RepositoryAgendaPraticien>();
         builder.Services.AddAuthorization(options =>
         {
             options.AddPolicy("RequireAdminRole", policy =>

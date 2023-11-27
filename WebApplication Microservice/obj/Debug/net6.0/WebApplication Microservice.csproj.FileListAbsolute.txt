@@ -25,17 +25,28 @@ C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplic
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.csproj.CoreCompileInputs.cache
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets\msbuild.WebApplication Microservice.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets\msbuild.build.WebApplication Microservice.props
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication Microservice.props
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApplication Microservice.props
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\scopedcss\bundle\WebApplication Microservice.styles.css
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.csproj.CopyComplete
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.dll
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\refint\WebApplication Microservice.dll
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.pdb
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.genruntimeconfig.cache
 C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\ref\WebApplication Microservice.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.RazorAssemblyInfo.cache
+C:\Users\A114SR\source\repos\Apprentissage\WebApplication Microservice\WebApplication Microservice\obj\Debug\net6.0\WebApplication Microservice.RazorAssemblyInfo.cs

@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using System;
+using ServicePriseDeRendezVous.Repositories;
 
 internal class Program
 {
@@ -19,10 +17,12 @@ internal class Program
         builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
-                options.Authority = authority;
+                options.Authority = "https://mon-serveur-d-authentification.com";
                 options.RequireHttpsMetadata = true;
-                options.Audience = audience;
+                options.Audience = "https://ServicePriseDeRendezVous-Microservice.com"; // Remplacez par l'audience appropriée
             });
+
+        builder.Services.AddScoped<IRepositoryAppointement, RepositoryAppointement>();
 
         builder.Services.AddAuthorization(options =>
         {

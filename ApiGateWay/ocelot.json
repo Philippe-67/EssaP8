@@ -1,62 +1,133 @@
 {
-  {
-    "ReRoutes": [
-      {
-        "DownstreamPathTemplate": "/api/{everything}",
-        "UpstreamPathTemplate": "/{everything}",
-        "UpstreamHttpMethod": [ "Get" ],
-        "DownstreamScheme": "http",
-        "DownstreamHostAndPorts": [
-          {
-            "Host": "service-prise-de-rendezvous",
-            "Port": 5001
-          }
-        ],
-        "AuthenticationOptions": {
-          "AuthenticationProviderKey": "Bearer", // Indique l'utilisation de JWT
-          "JwksOptions": {
-            "Authority": "https://mon-serveur-d-authentification.com", // Remplacez par l'URL de votre serveur d'identité, fait
-            "RequireHttps": true
-          },
-          "RouteName": "ServicePriseDeRendezVous" // Remplacez par un nom approprié", fait
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "service-prise-de-rendezvous",
+          "Port": 5001
         }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "JwksOptions": {
+          "Authority": "https://mon-serveur-d-authentification.com",
+          "RequireHttps": true
+        },
+        "RouteName": "ServicePriseDeRendezVous"
       }
-        ],
-    "AuthenticationOptions": {
-      "AuthenticationProviderKey": "Bearer",
-      "JwksOptions": {
-        "Authority": "https://mon-serveur-d-authentification.com",
-        "RequireHttps": true
-      },
-      "RouteName": "ServiceAgendaPraticiens"
-    }
-  },
-  {
-    "DownstreamPathTemplate": "/api/practitioner-agenda/{practitionerId}",
-    "UpstreamPathTemplate": "/practitioner-agenda/{practitionerId}",
-    "UpstreamHttpMethod": [ "Get" ],
-    "DownstreamScheme": "http",
-    "DownstreamHostAndPorts": [
-      {
-        "Host": "service-agenda-praticiens",
-        "Port": 5002
+    },
+    {
+      "DownstreamPathTemplate": "/api/practitioner-agenda/{practitionerId}",
+      "UpstreamPathTemplate": "/practitioner-agenda/{practitionerId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "service-agenda-praticiens",
+          "Port": 5002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "JwksOptions": {
+          "Authority": "https://your-identity-server",
+          "RequireHttps": true
+        },
+        "RouteName": "ServiceAgendaPraticiens"
       }
-    ],
-    
-    "AuthenticationOptions": {
-      "AuthenticationProviderKey": "Bearer",
-      "JwksOptions": {
-        "Authority": "https://your-identity-server",
-        "RequireHttps": true
-      },
-      "RouteName": "your-route-name"
+    },
+    // Ajoutez d'autres routes CRUD pour le service Praticien
+    {
+      "DownstreamPathTemplate": "/api/praticien/{id}",
+      "UpstreamPathTemplate": "/praticien/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "service-praticien",
+          "Port": 5003
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "JwksOptions": {
+          "Authority": "https://your-identity-server",
+          "RequireHttps": true
+        },
+        "RouteName": "ServicePraticien"
+      }
+    },
+    // Ajoutez d'autres routes CRUD pour le service Patient
+    {
+      "DownstreamPathTemplate": "/api/patient/{id}",
+      "UpstreamPathTemplate": "/patient/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "service-patient",
+          "Port": 5004
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "JwksOptions": {
+          "Authority": "https://your-identity-server",
+          "RequireHttps": true
+        },
+        "RouteName": "ServicePatient"
+      }
+    },
+    // Ajoutez d'autres routes Swagger pour vos services supplémentaires
+    {
+      "DownstreamPathTemplate": "/swagger/{everything}",
+      "UpstreamPathTemplate": "/swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "service-autre",
+          "Port": 5005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "JwksOptions": {
+          "Authority": "https://your-identity-server",
+          "RequireHttps": true
+        },
+        "RouteName": "autre-route"
+      }
     }
-  }
-    ],
-    "GlobalConfiguration": {
-      "BaseUrl": "http://localhost:5000"
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Name": "Service Prise de Rendez-Vous",
+      "Url": "/service-prise-de-rendez-vous/swagger/v1/swagger.json"
+    },
+    {
+      "Name": "Service Agenda Praticiens",
+      "Url": "/service-agenda-praticiens/swagger/v1/swagger.json"
+    },
+    // Ajoutez d'autres points de terminaison Swagger
+    {
+      "Name": "Service Praticien",
+      "Url": "/praticien/swagger/v1/swagger.json"
+    },
+    {
+      "Name": "Service Patient",
+      "Url": "/patient/swagger/v1/swagger.json"
+    },
+    {
+      "Name": "Service Autre",
+      "Url": "/autre/swagger/v1/swagger.json"
     }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
   }
-
-
 }
